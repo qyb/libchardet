@@ -64,7 +64,7 @@ noinst_HEADERS = CharDistribution.h \
 				tables/JISFreq.tab
 
 AM_CFLAGS = -Wall @CFLAGS@
-AM_CXXFLAGS = -Wall -Wno-non-virtual-dtor -nostdinc++ -fno-rtti -fno-exceptions @CPPFLAGS@
+AM_CXXFLAGS = -Wall -Wno-non-virtual-dtor -nostdinc++ -fno-rtti -fno-exceptions @CPPFLAGS@ -DINCLUDE_CHARDET_CONFIG
 AM_LDFLAGS = -version-info $(SONAME_INFO) @LDFLAGS@ @LIBS@ @MINGW_CYGWIN_DYNLIB@
 
 lib_LTLIBRARIES = libchardet.la
