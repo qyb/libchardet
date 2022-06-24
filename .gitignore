@@ -17,6 +17,7 @@ libtool
 stamp-h1
 tags
 src/tables/.dirstamp
+tools/
 tools/compile
 tools/ltmain.sh
 
